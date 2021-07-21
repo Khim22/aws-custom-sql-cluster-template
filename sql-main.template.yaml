@@ -696,7 +696,7 @@ Resources:
     Type: AWS::CloudFormation::Stack
     Properties:
       TemplateURL: !Sub
-        - https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}submodules/quickstart-microsoft-activedirectory/templates/${QSADTemplate}
+        - https://github.com/aws-quickstart/quickstart-microsoft-activedirectory/blob/main/templates/ad-3.template
         - QSADTemplate: !If
             - UseAWSDirectoryServiceEE
             - ad-3.template
